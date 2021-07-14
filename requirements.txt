@@ -1,5 +1,5 @@
 # General
-telethon
+telethon==1.19.5
 pyrogram>=1.0.7
 aiogram
 
@@ -117,6 +117,7 @@ Python_ARQ
 googletrans==4.0.0-rc1
 pyromod
 aiofiles
+pygithub
 
 
 #
