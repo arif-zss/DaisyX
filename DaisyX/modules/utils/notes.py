@@ -174,9 +174,9 @@ def parse_button(data, name):
         text = f"\n[{name}](btn{action}:{args}*!repl!*)"
     else:
         if args:
-            text = f"\n[{name}].(btn{action}:{args})"
+            text = f"\n[{name}](btn{action}:{args})"
         else:
-            text = f"\n[{name}].(btn{action})"
+            text = f"\n[{name}](btn{action})"
 
     return text
 
@@ -417,9 +417,9 @@ def button_parser(chat_id, texts, pm=False, aio=False, row_width=None):
             # If btn not registred
             btn = None
             if argument:
-                text += f"\n[{name}].(btn{action}:{argument})"
+                text += f"\n[{name}](btn{action}:{argument})"
             else:
-                text += f"\n[{name}].(btn{action})"
+                text += f"\n[{name}](btn{action})"
                 continue
 
         if btn:
